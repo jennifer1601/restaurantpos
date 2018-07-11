@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_1"
+        android:layout_width="match_parent"
+        android:background="#2b2b2b"
+        android:theme="@style/ToolbarStyle"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table Status"
+            android:textColor="@color/whiteTextColour"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL"
+                android:clickable="true"
+                android:textColor="@color/whiteTextColour"
+                android:layout_marginRight="12dp"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/reserved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESERVED"
+                android:clickable="true"
+                android:textColor="@color/whiteTextColour"
+                android:layout_marginRight="12dp"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPEN"
+                android:clickable="true"
+                android:textColor="@color/whiteTextColour"
+                android:layout_marginRight="12dp"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FILLED"
+                android:clickable="true"
+                android:textColor="@color/whiteTextColour"
+                android:layout_marginRight="12dp"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/table_status_rView"
+        android:scrollbars="vertical"
+        android:background="#333"
+        android:paddingTop="8dp"
+        android:paddingLeft="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/dialog_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="number"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:id="@+id/dialog_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginBottom="24dp"
+        android:hint="Comment"/>
+
+    <Button
+        android:id="@+id/dialog_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:textColor="@color/whiteTextColour"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Confirm"/>
+
+</LinearLayout>
